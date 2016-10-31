@@ -1,5 +1,4 @@
 #Instructions
-#testing push
 
 1) git clone https://github.com/adrayv/hoth.git
 
