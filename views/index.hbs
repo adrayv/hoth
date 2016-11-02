@@ -1,35 +1,81 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Food Finder</title>
-				<head>
-					<link rel="stylesheet" type="text/css" href="/stylesheets/FF3.css">
-				</head>
-	</head>
-	<body>
-	<!-- input bar and button -->
-			<div>
-			<form method="POST" action="/result">
-				<div id="inputs">
-   						<input type="text" name="location" rows="4" cols="50" style="width:72.25%" class="form-control" placeholder="Enter City...">
-   						<input type="submit" value="submit" class="input-field" id="button" style="width:150px">
-      			</div>
-        	</form>
-        	<p>{{title}}</p>
-        	<p>{{output_name}}</p>
-        	</div>
-    <!-- background image -->
-				<body>
-				  <img alt="full screen background image" src="/images/Food_Finder5.svg" id="full-screen-background-image" /> 
-				  <div id="wrapper">
-				  </div>
-				</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-			<body background="/images/Food_Finder5.svg">
+    <title>Food Finder</title>
 
-	<!-- to remove scroll bars -->
-				<style type="text/css">
-				body {
-				    overflow:hidden;
-				}
-				</style>
+    <!-- Bootstrap core CSS -->
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/stylesheets/cover.css" rel="stylesheet">
+    <!-- Custom styles typing element -->
+    <!--<link href="/stylesheets/typing.css" rel="stylesheet">-->
+  </head>
+
+  <body>
+	<!--
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="/scripts/typed.js"></script>
+	<script>
+		$(function(){
+  	        $(".element").typed({
+				strings: ["First sentence.", "Second sentence."],
+  	        	typeSpeed: 1
+  	        });
+		});
+	</script>
+
+  <div class="element"></div>
+  -->
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">{{title}}</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link active" method="GET" action="/home">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Contact</a>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">What are you craving today?</h1>
+            <p class="lead"></p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-secondary">Let's Eat!</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/scripts/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/scripts/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

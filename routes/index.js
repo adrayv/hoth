@@ -1,11 +1,18 @@
 var express = require('express');
 var router = express.Router();
 
-var tester = "hello world"
+var page_title = "Food Finder";
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: tester });
+  res.render('index', { title: page_title });
 });
+
+/*
+router.get('/home', function(req, res) {
+	res.redirect('https://www.google.com');
+	console.log("redirected to home successfully");
+});
+*/
 router.post('/result', function(req, res) {
 	var Yelp = require('yelp');
 
